@@ -1,0 +1,26 @@
+<section id='loginPage'>
+  <h2 class="text-center login-text"> Login</h2>
+
+  <section style="width: 30%; margin-top: 8% ;margin-left:auto; margin-right:auto;">
+
+    <form [formGroup]="loginForm" class="form mt-4" (submit)="login()">
+
+      <div class="form-group">
+        <input #userNameInput formControlName="userName" class="form-control" placeholder="username" autofocus>
+        <small *ngIf="!!loginForm.get('userName').errors?.required" class="text-danger d-block mt-2">
+          Username is required!
+        </small>
+      </div>
+
+      <div class="form-group">
+        <input formControlName="password" class="form-control" type="password" placeholder="password">
+        <small *ngIf="!!loginForm.get('password').errors?.required" class="text-danger d-block mt-2">
+          Password is required!
+        </small>
+      </div>
+
+      <button [disabled]='loginForm.invalid' type="submit" class="btn btn-warning btn-block">login</button>
+
+    </form>
+  </section>
+</section>

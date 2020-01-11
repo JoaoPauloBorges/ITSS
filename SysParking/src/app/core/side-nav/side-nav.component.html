@@ -1,0 +1,23 @@
+<p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000">
+  <h1 style="font-weight:normal">Menu</h1>
+  <div class="p-grid p-dir-col" style="padding-top: 20%;">
+    <div class="p-col">
+      <button pButton type="button" (click)="registrationClick()" icon="pi pi-user-plus" label="Cadastro de Clientes"
+        class="ui-button-secondary"></button>
+    </div>
+    <div class="p-col">
+      <button pButton type="button" (click)="registrationClick()" icon="pi pi-table" label="Cadastro de Veículos"
+        class="ui-button-secondary"></button>
+    </div>
+    <div class="p-col">
+      <button pButton type="button" (click)="registrationClick()" icon="pi pi-table" label="Cadastro de Pátio"
+        class="ui-button-secondary"></button>
+    </div>
+    <div class="p-col">
+      <button pButton type="button" (click)="registrationClick()" icon="pi pi-key" label="Cadastro de Usuário de sistema"
+        class="ui-button-secondary"></button>
+    </div>
+  </div>
+</p-sidebar>
+
+<button pButton class="ui-button-secondary" type="button" (click)="visibleSidebar = true" icon="pi pi-bars"></button>
