@@ -1,17 +1,17 @@
 Practical test - Parking Management system (evaluation purpose only)
 
 . Customer registration
-	name
-	cpf
-	phonenumber
+	-name
+	-cpf
+	-phonenumber
 . Vehicle registration
-	plate
-	model
-	color
+	-plate
+	-model
+	-color
 . Patio registration
-	description
-	number os vacancies
-	tax rate
+	-description
+	-number os vacancies
+	-parking rate 
 - Entry and exit registration, length of stay and calculation of the amount to pay
 - Dashboard on screen with total, free and occupied vacancies
 
